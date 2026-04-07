@@ -22,7 +22,7 @@ namespace pryDiesenberg_SP1_EjR_07042026
 
         public void RegistrarMedicoBD()
         {
-
+           
         }
     }
 }
