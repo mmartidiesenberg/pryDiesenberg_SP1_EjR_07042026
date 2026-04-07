@@ -12,6 +12,7 @@ namespace pryDiesenberg_SP1_EjR_07042026
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public int Especialidad { get; set; }
+        
         public claseMedico(int matricula, string nombre, string apellido, int especialidad)
         {
             Matricula = matricula;
@@ -22,7 +23,8 @@ namespace pryDiesenberg_SP1_EjR_07042026
 
         public void RegistrarMedicoBD()
         {
-           
+            Medico nuevoMedico = new Medico(this.Matricula, this.Nombre, this.Especialidad);
+            GestorDatos.ListaMedicos.Add(nuevoMedico);
         }
     }
 }
