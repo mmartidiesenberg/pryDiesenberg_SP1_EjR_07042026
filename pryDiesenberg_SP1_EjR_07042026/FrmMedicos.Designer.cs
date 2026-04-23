@@ -25,52 +25,68 @@ namespace pryDiesenberg_SP1_EjR_07042026
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            
+            // 
+            // lblTitulo
+            // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.lblTitulo.Location = new System.Drawing.Point(100, 20);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(200, 24);
+            this.lblTitulo.Size = new System.Drawing.Size(235, 24);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Registrar Nuevo Médico";
-            
+            // 
+            // lblMatricula
+            // 
             this.lblMatricula.AutoSize = true;
             this.lblMatricula.Location = new System.Drawing.Point(30, 70);
             this.lblMatricula.Name = "lblMatricula";
-            this.lblMatricula.Size = new System.Drawing.Size(60, 13);
+            this.lblMatricula.Size = new System.Drawing.Size(55, 13);
             this.lblMatricula.TabIndex = 1;
             this.lblMatricula.Text = "Matrícula:";
-            
-            this.txtMatricula.Location = new System.Drawing.Point(130, 67);
-            this.txtMatricula.Name = "txtMatricula";
-            this.txtMatricula.Size = new System.Drawing.Size(200, 20);
-            this.txtMatricula.TabIndex = 2;
-            
+            // 
+            // lblNombreMedico
+            // 
             this.lblNombreMedico.AutoSize = true;
             this.lblNombreMedico.Location = new System.Drawing.Point(30, 110);
             this.lblNombreMedico.Name = "lblNombreMedico";
-            this.lblNombreMedico.Size = new System.Drawing.Size(95, 13);
+            this.lblNombreMedico.Size = new System.Drawing.Size(102, 13);
             this.lblNombreMedico.TabIndex = 3;
             this.lblNombreMedico.Text = "Nombre del Médico:";
-            
-            this.txtNombreMedico.Location = new System.Drawing.Point(130, 107);
-            this.txtNombreMedico.Name = "txtNombreMedico";
-            this.txtNombreMedico.Size = new System.Drawing.Size(200, 20);
-            this.txtNombreMedico.TabIndex = 4;
-            
+            // 
+            // lblEspecialidad
+            // 
             this.lblEspecialidad.AutoSize = true;
             this.lblEspecialidad.Location = new System.Drawing.Point(30, 150);
             this.lblEspecialidad.Name = "lblEspecialidad";
             this.lblEspecialidad.Size = new System.Drawing.Size(70, 13);
             this.lblEspecialidad.TabIndex = 5;
             this.lblEspecialidad.Text = "Especialidad:";
-            
+            // 
+            // txtMatricula
+            // 
+            this.txtMatricula.Location = new System.Drawing.Point(130, 67);
+            this.txtMatricula.Name = "txtMatricula";
+            this.txtMatricula.Size = new System.Drawing.Size(200, 20);
+            this.txtMatricula.TabIndex = 2;
+            // 
+            // txtNombreMedico
+            // 
+            this.txtNombreMedico.Location = new System.Drawing.Point(130, 107);
+            this.txtNombreMedico.Name = "txtNombreMedico";
+            this.txtNombreMedico.Size = new System.Drawing.Size(200, 20);
+            this.txtNombreMedico.TabIndex = 4;
+            // 
+            // cmbEspecialidad
+            // 
             this.cmbEspecialidad.FormattingEnabled = true;
             this.cmbEspecialidad.Location = new System.Drawing.Point(130, 147);
             this.cmbEspecialidad.Name = "cmbEspecialidad";
             this.cmbEspecialidad.Size = new System.Drawing.Size(200, 21);
             this.cmbEspecialidad.TabIndex = 6;
-            
+            // 
+            // btnGuardar
+            // 
             this.btnGuardar.Location = new System.Drawing.Point(50, 200);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(120, 30);
@@ -78,7 +94,9 @@ namespace pryDiesenberg_SP1_EjR_07042026
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            
+            // 
+            // btnLimpiar
+            // 
             this.btnLimpiar.Location = new System.Drawing.Point(210, 200);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(120, 30);
@@ -86,7 +104,9 @@ namespace pryDiesenberg_SP1_EjR_07042026
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
-            
+            // 
+            // FrmMedicos
+            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(380, 260);
@@ -100,10 +120,12 @@ namespace pryDiesenberg_SP1_EjR_07042026
             this.Controls.Add(this.lblMatricula);
             this.Controls.Add(this.lblTitulo);
             this.Name = "FrmMedicos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registrar Médico";
             this.Load += new System.EventHandler(this.FrmMedicos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         private System.Windows.Forms.Label lblTitulo;

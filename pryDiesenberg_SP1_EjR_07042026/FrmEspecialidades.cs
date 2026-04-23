@@ -80,5 +80,10 @@ namespace pryDiesenberg_SP1_EjR_07042026
             txtNombreEspecialidad.Clear();
             txtIdEspecialidad.Focus();
         }
+
+        private void lblTitulo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
