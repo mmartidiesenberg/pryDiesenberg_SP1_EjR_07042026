@@ -19,8 +19,6 @@ namespace pryDiesenberg_SP1_EjR_07042026
             this.lblEspecialidad = new System.Windows.Forms.Label();
             this.cmbEspecialidad = new System.Windows.Forms.ComboBox();
             this.dgvMedicos = new System.Windows.Forms.DataGridView();
-            this.btnRegistrarEspecialidad = new System.Windows.Forms.Button();
-            this.btnRegistrarMedico = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMedicos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,33 +58,12 @@ namespace pryDiesenberg_SP1_EjR_07042026
             this.dgvMedicos.Size = new System.Drawing.Size(380, 250);
             this.dgvMedicos.TabIndex = 3;
             // 
-            // btnRegistrarEspecialidad
-            // 
-            this.btnRegistrarEspecialidad.Location = new System.Drawing.Point(50, 380);
-            this.btnRegistrarEspecialidad.Name = "btnRegistrarEspecialidad";
-            this.btnRegistrarEspecialidad.Size = new System.Drawing.Size(180, 30);
-            this.btnRegistrarEspecialidad.TabIndex = 4;
-            this.btnRegistrarEspecialidad.Text = "Registrar Especialidad";
-            this.btnRegistrarEspecialidad.UseVisualStyleBackColor = true;
-            this.btnRegistrarEspecialidad.Click += new System.EventHandler(this.btnRegistrarEspecialidad_Click);
-            // 
-            // btnRegistrarMedico
-            // 
-            this.btnRegistrarMedico.Location = new System.Drawing.Point(250, 380);
-            this.btnRegistrarMedico.Name = "btnRegistrarMedico";
-            this.btnRegistrarMedico.Size = new System.Drawing.Size(180, 30);
-            this.btnRegistrarMedico.TabIndex = 5;
-            this.btnRegistrarMedico.Text = "Registrar Médico";
-            this.btnRegistrarMedico.UseVisualStyleBackColor = true;
-            this.btnRegistrarMedico.Click += new System.EventHandler(this.btnRegistrarMedico_Click);
-            // 
             // FrmConsulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 430);
-            this.Controls.Add(this.btnRegistrarMedico);
-            this.Controls.Add(this.btnRegistrarEspecialidad);
+            this.BackColor = System.Drawing.Color.Lavender;
+            this.ClientSize = new System.Drawing.Size(480, 383);
             this.Controls.Add(this.dgvMedicos);
             this.Controls.Add(this.cmbEspecialidad);
             this.Controls.Add(this.lblEspecialidad);
@@ -105,7 +82,5 @@ namespace pryDiesenberg_SP1_EjR_07042026
         private System.Windows.Forms.Label lblEspecialidad;
         private System.Windows.Forms.ComboBox cmbEspecialidad;
         private System.Windows.Forms.DataGridView dgvMedicos;
-        private System.Windows.Forms.Button btnRegistrarEspecialidad;
-        private System.Windows.Forms.Button btnRegistrarMedico;
     }
 }

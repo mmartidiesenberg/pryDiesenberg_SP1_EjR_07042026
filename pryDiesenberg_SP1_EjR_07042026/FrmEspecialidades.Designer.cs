@@ -91,6 +91,7 @@ namespace pryDiesenberg_SP1_EjR_07042026
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Lavender;
             this.ClientSize = new System.Drawing.Size(350, 220);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnGuardar);
@@ -99,6 +100,7 @@ namespace pryDiesenberg_SP1_EjR_07042026
             this.Controls.Add(this.txtIdEspecialidad);
             this.Controls.Add(this.lblIdEspecialidad);
             this.Controls.Add(this.lblTitulo);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "FrmEspecialidades";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registrar Especialidad";

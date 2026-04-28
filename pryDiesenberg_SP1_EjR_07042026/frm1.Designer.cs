@@ -1,6 +1,6 @@
 ﻿namespace pryDiesenberg_SP1_EjR_07042026
 {
-    partial class Form1
+    partial class frm1
     {
         /// <summary>
         /// Variable del diseñador necesaria.

@@ -16,7 +16,7 @@ namespace pryDiesenberg_SP1_EjR_07042026
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frm1());
         }
     }
 }

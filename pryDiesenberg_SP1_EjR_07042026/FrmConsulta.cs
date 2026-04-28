@@ -19,17 +19,34 @@ namespace pryDiesenberg_SP1_EjR_07042026
         private void CargarComboEspecialidades()
         {
             cmbEspecialidad.DataSource = null;
-            cmbEspecialidad.DataSource = GestorDatos.ListaEspecialidades;
+            // Ensure DisplayMember/ValueMember are set before assigning DataSource
             cmbEspecialidad.DisplayMember = "Nombre";
             cmbEspecialidad.ValueMember = "Id";
+            cmbEspecialidad.DataSource = GestorDatos.ListaEspecialidades;
             cmbEspecialidad.SelectedIndex = -1;
         }
 
         private void cmbEspecialidad_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbEspecialidad.SelectedIndex >= 0)
+            if (cmbEspecialidad.SelectedIndex >= 0 && cmbEspecialidad.SelectedValue != null)
             {
-                int idEspecialidad = (int)cmbEspecialidad.SelectedValue;
+                int idEspecialidad;
+                // SelectedValue might be the actual Especialidad object while binding completes,
+                // so handle both cases safely.
+                if (cmbEspecialidad.SelectedValue is int)
+                {
+                    idEspecialidad = (int)cmbEspecialidad.SelectedValue;
+                }
+                else if (cmbEspecialidad.SelectedValue is Especialidad esp)
+                {
+                    idEspecialidad = esp.Id;
+                }
+                else
+                {
+                    dgvMedicos.DataSource = null;
+                    return;
+                }
+
                 MostrarMedicosEspecialidad(idEspecialidad);
             }
             else

@@ -15,6 +15,7 @@ namespace pryDiesenberg_SP1_EjR_07042026
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblBienvenida = new System.Windows.Forms.Label();
             this.btnGestionarEspecialidades = new System.Windows.Forms.Button();
@@ -22,23 +23,30 @@ namespace pryDiesenberg_SP1_EjR_07042026
             this.btnConsultar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
-
+            // 
+            // lblTitulo
+            // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.lblTitulo.Location = new System.Drawing.Point(100, 30);
+            this.lblTitulo.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblTitulo.Location = new System.Drawing.Point(78, 32);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(400, 36);
+            this.lblTitulo.Size = new System.Drawing.Size(365, 29);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Sistema de Gestión de Clínica";
-
+            // 
+            // lblBienvenida
+            // 
             this.lblBienvenida.AutoSize = true;
             this.lblBienvenida.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblBienvenida.Location = new System.Drawing.Point(100, 90);
             this.lblBienvenida.Name = "lblBienvenida";
-            this.lblBienvenida.Size = new System.Drawing.Size(300, 20);
+            this.lblBienvenida.Size = new System.Drawing.Size(295, 20);
             this.lblBienvenida.TabIndex = 1;
             this.lblBienvenida.Text = "Bienvenido al sistema de gestión médica";
-
+            // 
+            // btnGestionarEspecialidades
+            // 
             this.btnGestionarEspecialidades.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.btnGestionarEspecialidades.Location = new System.Drawing.Point(100, 150);
             this.btnGestionarEspecialidades.Name = "btnGestionarEspecialidades";
@@ -47,7 +55,9 @@ namespace pryDiesenberg_SP1_EjR_07042026
             this.btnGestionarEspecialidades.Text = "Gestionar Especialidades";
             this.btnGestionarEspecialidades.UseVisualStyleBackColor = true;
             this.btnGestionarEspecialidades.Click += new System.EventHandler(this.btnGestionarEspecialidades_Click);
-
+            // 
+            // btnGestionarMedicos
+            // 
             this.btnGestionarMedicos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.btnGestionarMedicos.Location = new System.Drawing.Point(100, 220);
             this.btnGestionarMedicos.Name = "btnGestionarMedicos";
@@ -56,7 +66,9 @@ namespace pryDiesenberg_SP1_EjR_07042026
             this.btnGestionarMedicos.Text = "Gestionar Médicos";
             this.btnGestionarMedicos.UseVisualStyleBackColor = true;
             this.btnGestionarMedicos.Click += new System.EventHandler(this.btnGestionarMedicos_Click);
-
+            // 
+            // btnConsultar
+            // 
             this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.btnConsultar.Location = new System.Drawing.Point(100, 290);
             this.btnConsultar.Name = "btnConsultar";
@@ -65,7 +77,9 @@ namespace pryDiesenberg_SP1_EjR_07042026
             this.btnConsultar.Text = "Consultar Médicos por Especialidad";
             this.btnConsultar.UseVisualStyleBackColor = true;
             this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
-
+            // 
+            // btnSalir
+            // 
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.btnSalir.Location = new System.Drawing.Point(100, 360);
             this.btnSalir.Name = "btnSalir";
@@ -74,9 +88,12 @@ namespace pryDiesenberg_SP1_EjR_07042026
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-
+            // 
+            // frmPrincipal
+            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Thistle;
             this.ClientSize = new System.Drawing.Size(500, 480);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnConsultar);
@@ -84,11 +101,13 @@ namespace pryDiesenberg_SP1_EjR_07042026
             this.Controls.Add(this.btnGestionarEspecialidades);
             this.Controls.Add(this.lblBienvenida);
             this.Controls.Add(this.lblTitulo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPrincipal";
-            this.Text = "Sistema de Gestión de Clínica";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Sistema de Gestión de Clínica";
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         private System.Windows.Forms.Label lblTitulo;

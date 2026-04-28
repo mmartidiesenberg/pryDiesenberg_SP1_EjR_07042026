@@ -109,6 +109,7 @@ namespace pryDiesenberg_SP1_EjR_07042026
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Lavender;
             this.ClientSize = new System.Drawing.Size(380, 260);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnGuardar);
