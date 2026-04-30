@@ -57,7 +57,7 @@ namespace pryDiesenberg_SP1_EjR_07042026
             // 
             this.txtIdEspecialidad.Location = new System.Drawing.Point(140, 67);
             this.txtIdEspecialidad.Name = "txtIdEspecialidad";
-            this.txtIdEspecialidad.Size = new System.Drawing.Size(180, 20);
+            this.txtIdEspecialidad.Size = new System.Drawing.Size(120, 20);
             this.txtIdEspecialidad.TabIndex = 2;
             // 
             // txtNombreEspecialidad

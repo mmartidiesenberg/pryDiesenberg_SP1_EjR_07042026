@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="claseMedico.cs" />
     <Compile Include="ClasesModelo.cs" />
+    <Compile Include="DaoClinica.cs" />
     <Compile Include="frm1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +122,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Clinica.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="medical-49_icon-icons.com_73913.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

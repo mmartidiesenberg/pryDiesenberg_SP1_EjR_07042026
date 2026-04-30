@@ -67,7 +67,7 @@ namespace pryDiesenberg_SP1_EjR_07042026
             // 
             this.txtMatricula.Location = new System.Drawing.Point(130, 67);
             this.txtMatricula.Name = "txtMatricula";
-            this.txtMatricula.Size = new System.Drawing.Size(200, 20);
+            this.txtMatricula.Size = new System.Drawing.Size(121, 20);
             this.txtMatricula.TabIndex = 2;
             // 
             // txtNombreMedico
@@ -79,6 +79,7 @@ namespace pryDiesenberg_SP1_EjR_07042026
             // 
             // cmbEspecialidad
             // 
+            this.cmbEspecialidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEspecialidad.FormattingEnabled = true;
             this.cmbEspecialidad.Location = new System.Drawing.Point(130, 147);
             this.cmbEspecialidad.Name = "cmbEspecialidad";
