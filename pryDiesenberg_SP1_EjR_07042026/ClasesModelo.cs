@@ -35,8 +35,6 @@ namespace pryDiesenberg_SP1_EjR_07042026
 
         static GestorDatos()
         {
-            ListaEspecialidades.Add(new Especialidad(1, "Médico Clínico"));
-            ListaEspecialidades.Add(new Especialidad(2, "Cirujano"));
             ListaEspecialidades.Add(new Especialidad(3, "Otro"));
         }
     }

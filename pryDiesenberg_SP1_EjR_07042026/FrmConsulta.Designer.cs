@@ -43,6 +43,7 @@ namespace pryDiesenberg_SP1_EjR_07042026
             // 
             // cmbEspecialidad
             // 
+            this.cmbEspecialidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEspecialidad.FormattingEnabled = true;
             this.cmbEspecialidad.Location = new System.Drawing.Point(130, 67);
             this.cmbEspecialidad.Name = "cmbEspecialidad";
