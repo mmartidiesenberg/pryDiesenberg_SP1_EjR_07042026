@@ -32,5 +32,10 @@ namespace pryDiesenberg_SP1_EjR_07042026
         {
             this.Close();
         }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

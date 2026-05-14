@@ -23,7 +23,6 @@ namespace pryDiesenberg_SP1_EjR_07042026
 
         public void RegistrarMedicoBD()
         {
-            // Crea el objeto modelo que usa el DAO (ajusta constructor si cambia)
             Medico nuevoMedico = new Medico(this.Matricula, this.Nombre, this.Especialidad);
 
             try
@@ -31,7 +30,6 @@ namespace pryDiesenberg_SP1_EjR_07042026
                 bool ok = DaoClinica.InsertMedico(nuevoMedico);
                 if (ok)
                 {
-                    // Opcional: mantener en la lista en memoria
                     GestorDatos.ListaMedicos.Add(nuevoMedico);
                 }
                 else
@@ -41,7 +39,6 @@ namespace pryDiesenberg_SP1_EjR_07042026
             }
             catch (Exception ex)
             {
-                // Maneja el error según la UX de tu aplicación
                 System.Windows.Forms.MessageBox.Show("Error al guardar en la BD: " + ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
         }

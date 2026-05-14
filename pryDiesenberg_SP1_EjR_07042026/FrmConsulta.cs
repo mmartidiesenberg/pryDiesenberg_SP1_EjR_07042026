@@ -31,8 +31,7 @@ namespace pryDiesenberg_SP1_EjR_07042026
             if (cmbEspecialidad.SelectedIndex >= 0 && cmbEspecialidad.SelectedValue != null)
             {
                 int idEspecialidad;
-                // SelectedValue might be the actual Especialidad object while binding completes,
-                // so handle both cases safely.
+              
                 if (cmbEspecialidad.SelectedValue is int)
                 {
                     idEspecialidad = (int)cmbEspecialidad.SelectedValue;
